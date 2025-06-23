@@ -1,43 +1,311 @@
 /*  ------------ header media ------ */
 
-@media screen and (max-width:1392px){
-  .header{
-     width: 100%;
-min-height: 130px;
-gap: 30px !important;
-padding-top: 25px;
-padding-right: 60px;
-padding-bottom: 25px;
-padding-left: 60px;
-display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 24px;
-  background-color: #fff;
-  border-bottom: 1px solid #eee;
-  position: relative;
-}
-  }
-
-  @media screen and (max-width:1108px){
-    #mainNav{
-      display: none ;
+@media screen and (max-width:1392px) {
+    .header {
+        width: 100%;
+        min-height: 130px;
+        gap: 30px !important;
+        padding-top: 25px;
+        padding-right: 60px;
+        padding-bottom: 25px;
+        padding-left: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 24px;
+        background-color: #fff;
+        border-bottom: 1px solid #eee;
+        position: relative;
     }
-    .hero-image{
-        display: none ;
+}
+
+@media screen and (max-width:1258px) {
+    .hero-image img {
+        width: 635px;
+        border-radius: 50%;
+        margin-left: -26px !important;
     }
-
- 
-  }
-   @media (max-width: 778px){
-  .burger {
-    display: flex !important;
-  }
-.city{
-  display: none;
-}
-.favorite {
- display: none !important;  
 }
 
-   }
+@media screen and (max-width:1108px) {
+    .burger {
+        display: flex !important;
+    }
+    .chef-image {
+        display: none;
+    }
+    #mainNav {
+        display: none;
+    }
+    .hero-image {
+        display: none;
+    }
+}
+
+@media (max-width: 778px) {
+    section {
+        padding-inline: 24px;
+    }
+    .hero-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    a.how-link {
+        display: none;
+    }
+    .heroContent1 {
+        display: flex;
+    }
+    .heroContent1,
+    .heroAfter {
+        display: none;
+    }
+    .heroContent1 {
+        max-width: 375px;
+        width: 100%;
+        min-height: 242px;
+        display: flex !important;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .heroContent1 .h1 {
+        max-width: 335px;
+        width: 100%;
+        min-height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .heroContent1 .h1 h1 {
+        font-weight: 700;
+        font-size: 31px;
+        line-height: 0%;
+        letter-spacing: 0%;
+        text-align: center;
+        color: #1E1C2F;
+    }
+    .heroContent1 p {
+        font-family: Gilroy;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        letter-spacing: 0%;
+        text-align: center;
+        color: #1E1C2F;
+    }
+    .heroAfter {
+        display: flex !important;
+    }
+    .heroContents {
+        display: none;
+    }
+    .burger {
+        display: flex !important;
+    }
+    .city {
+        display: none;
+    }
+    .favorite {
+        display: none !important;
+    }
+}
+
+@media(max-width: 376px) {
+    .hero {
+        width: 100%;
+        min-height: 202px !important;
+        justify-content: space-between;
+        border-radius: 30px;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+    }
+    .search-bar img {
+        display: none;
+    }
+    .VectorYellow {
+        display: flex !important;
+    }
+    .popular-header2 {
+        display: none !important;
+    }
+    .popular-header2After {
+        display: flex !important;
+    }
+    .popular-header2After h2 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+    .popular-header2After h2 span {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-style: solid;
+        text-decoration-thickness: 0%;
+        text-decoration-skip-ink: auto;
+    }
+    .heroAfter {
+        display: flex !important;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-style: solid;
+        color: #6F64FE;
+        text-decoration-thickness: 0%;
+        text-decoration-skip-ink: auto;
+    }
+    section {
+        padding-inline: 1px !important;
+    }
+    .heroContents h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .heroContents p {
+        font-size: 14px;
+        text-align: center;
+    }
+    .search-bar input {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        flex-direction: column;
+        align-items: center;
+        border: none;
+        background: var(--Gray-3, #666480);
+        gap: 10px;
+        padding: 12px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .optionss {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .optionss :nth-child(2) {
+        width: 146px;
+        height: 43px;
+        border-radius: 16px;
+        gap: 8px;
+        padding-top: 13px;
+        padding-right: 20px;
+        padding-bottom: 13px;
+        padding-left: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .option-btn {
+        width: 100px;
+        height: 43px;
+        border-radius: 16px !important;
+        gap: 8px;
+        padding-top: 13px;
+        padding-right: 20px;
+        padding-bottom: 13px;
+        padding-left: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-border-radius: 16px !important;
+        -moz-border-radius: 16px !important;
+        -ms-border-radius: 16px !important;
+        -o-border-radius: 16px !important;
+    }
+    .option-btn img {
+        margin-right: 6px;
+    }
+    .search-bar button {
+        display: none;
+    }
+    .popular-headerr {
+        display: none !important;
+    }
+    .popular-headerrAfter {
+        display: flex !important;
+    }
+    .popular-headerrAfter h2 {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        color: var(--Black, #1E1C2F);
+    }
+    .slider-wrapper {
+        margin-top: 20px;
+    }
+    .cardMini {
+        width: 148.21438598632812px;
+        height: 190.79312133789062px;
+    }
+    .slider-btn1 {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+        background: var(--Gray-1, #F3F2FF);
+        padding: 15px 0;
+        border-radius: 15px;
+        text-decoration: none;
+        color: #6F64FE;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+    .columns {
+        display: flex;
+        flex-wrap: nowrap;
+        /* Բլոկները կտեղավորվեն մեկ շարքով */
+        overflow-x: auto;
+        /* Հնարավորություն՝ սլայդ անել */
+        gap: 10px;
+        /* Տարրերի միջև տարածություն */
+        scroll-behavior: smooth;
+        /* Հարթ սլայդ */
+        padding: 10px;
+    }
+    .column {
+        flex: 0 0 auto;
+        /* Յուրաքանչյուր բլոկ կունենա ֆիքսված լայնություն */
+        width: 90%;
+        /* Բլոկը կզբաղեցնի էկրանի 90%-ը */
+        max-width: none;
+        /* Խուսափել ֆիքսված լայնության սահմանափակումներից */
+    }
+    .card-list {
+        display: flex;
+        flex-direction: column;
+        /* Թող բլոկի տարրերը մնան ուղղահայաց */
+        gap: 12px;
+    }
+    .card {
+        width: 100%;
+        /* Բլոկի ներքին տարրերը հարմարվեն 90% լայնությանը */
+    }
+    .columns::-webkit-scrollbar {
+        display: none;
+        /* Թաքցնում է սկրոլբարը */
+    }
+}
