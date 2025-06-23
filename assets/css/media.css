@@ -116,15 +116,41 @@
 }
 
 @media(max-width: 376px) {
+    .imgPizza {
+        display: flex !important;
+    }
+    .contenLarge {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
+    section.hero {
+        width: 100%;
+        height: 202px !important;
+        position: absolute;
+        margin-top: 620px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
     .hero {
         width: 100%;
-        min-height: 202px !important;
+        height: 202px !important;
         justify-content: space-between;
         border-radius: 30px;
         padding-top: 20px;
         padding-right: 20px;
         padding-bottom: 40px;
         padding-left: 20px;
+    }
+    .hero-content {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
     }
     .search-bar img {
         display: none;
@@ -274,38 +300,103 @@
         line-height: 100%;
         letter-spacing: 0%;
     }
-    .columns {
-        display: flex;
-        flex-wrap: nowrap;
-        /* Բլոկները կտեղավորվեն մեկ շարքով */
-        overflow-x: auto;
-        /* Հնարավորություն՝ սլայդ անել */
-        gap: 10px;
-        /* Տարրերի միջև տարածություն */
-        scroll-behavior: smooth;
-        /* Հարթ սլայդ */
-        padding: 10px;
+    .columns-wrapper {
+        overflow-x: scroll;
     }
-    .column {
-        flex: 0 0 auto;
-        /* Յուրաքանչյուր բլոկ կունենա ֆիքսված լայնություն */
-        width: 90%;
-        /* Բլոկը կզբաղեցնի էկրանի 90%-ը */
-        max-width: none;
-        /* Խուսափել ֆիքսված լայնության սահմանափակումներից */
+    .horizontal-scroll .column {
+        min-width: 80vw;
+        max-width: 80vw;
     }
-    .card-list {
-        display: flex;
-        flex-direction: column;
-        /* Թող բլոկի տարրերը մնան ուղղահայաց */
-        gap: 12px;
-    }
-    .card {
+    .top-places {
+        max-width: 375px;
         width: 100%;
-        /* Բլոկի ներքին տարրերը հարմարվեն 90% լայնությանը */
+        min-height: 760.3012084960938px;
+        gap: 24px;
+        padding-top: 60px;
+        padding-right: 20px;
+        padding-bottom: 60px;
+        padding-left: 20px;
+        background: var(--Gray-1, #F3F2FF);
+        margin-top: 20px !important;
     }
-    .columns::-webkit-scrollbar {
-        display: none;
-        /* Թաքցնում է սկրոլբարը */
+    .swiper-slide {
+        background: var(--Gray-1, #F3F2FF) !important;
+    }
+    .slider-section {
+        margin-top: 150px !important;
+    }
+    .slider-btn2 {
+        width: 335px;
+        height: 48.30119323730469px;
+        border-radius: 15.54px;
+        gap: 5.8px;
+        padding-top: 9.71px;
+        padding-right: 13.6px;
+        padding-bottom: 9.71px;
+        padding-left: 13.6px;
+        background: var(--White, #FFFFFF);
+        font-weight: 600;
+        font-size: 13.52px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-decoration: underline;
+        text-decoration-style: solid;
+        text-decoration-thickness: 0%;
+        text-decoration-skip-ink: auto;
+        color: #6F64FE;
+        text-align: center;
+    }
+    .gastroBox {
+        display: none !important;
+    }
+    .gastroBoxAfter {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 60px;
+    }
+    .gastroBoxAfter span {
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 20px;
+        letter-spacing: 0%;
+        text-align: center;
+        color: #6F64FE;
+    }
+    .gastroBoxAfter h2 {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        color: var(--Black, #1E1C2F);
+    }
+    .gastroBoxAfter p {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0%;
+        text-align: center;
+        color: var(--Black, #1E1C2F);
+    }
+    .gastroteam-grid {
+        margin-top: 20px !important;
+    }
+    .gastroteam-item {
+        width: 335px;
+        height: 323px;
+        border-radius: 20px;
+        padding: 20px;
+    }
+    .image-grid {
+        display: none !important;
+    }
+    .eat-content {
+        display: none !important;
+    }
+    .footer-cta {
+        margin-left: 0 !important;
     }
 }

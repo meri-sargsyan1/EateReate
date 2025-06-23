@@ -63,3 +63,25 @@ function updateProgressBar() {
     const percentage = (scrollLeft / maxScroll) * 100;
     scrollIndicator.style.width = `${percentage}%`;
 }
+
+
+const swiper = new Swiper(".interesting-swiper", {
+    slidesPerView: 1.1,
+    spaceBetween: 20,
+    grabCursor: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        600: {
+            slidesPerView: 1.5,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 2.5,
+        }
+    }
+});
